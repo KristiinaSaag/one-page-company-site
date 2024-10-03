@@ -252,3 +252,23 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Scroll to Top Button Styles */
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #93cb52;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background: #7ab436;
+}

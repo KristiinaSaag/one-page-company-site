@@ -149,6 +149,25 @@
     <footer id="footer" class="bg-dark text-center py-1">
       <p>Kõik õigused on kaitstud &copy;2024</p>
     </footer>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" onclick="scrollToTop()">Tagasi üles</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
     <!-- fas -->
     <script
       src="https://kit.fontawesome.com/1601de0f26.js"
