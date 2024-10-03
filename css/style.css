@@ -258,8 +258,8 @@ body {
 #scrollToTop {
     display: none;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
     background-color: #93cb52;
     color: #fff;
     padding: 0.75rem;
