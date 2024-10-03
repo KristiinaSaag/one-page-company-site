@@ -3,30 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fas -->
-    <script
-      src="https://kit.fontawesome.com/1601de0f26.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Company Web</title>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: 58.349451, lng: 26.714695 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
   </head>
   <body id="home">
     <!-- navbar -->
@@ -43,7 +21,6 @@
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
-
     <!-- header - showcase -->
     <header id="showcase">
       <div class="showcase-content">
@@ -95,7 +72,6 @@
         </div>
       </div>
     </section>
-
     <!-- #who -->
     <section id="who">
       <!-- img -->
@@ -118,7 +94,6 @@
         </ul>
       </div>
     </section>
-
     <!-- #clients -->
     <section id="clients">
       <div class="bg-light py-1">
@@ -134,7 +109,6 @@
         </div>
       </div>
     </section>
-
     <!-- #contact -->
     <section id="contact">
       <!-- form -->
@@ -168,15 +142,36 @@
       <!-- map -->
       <div id="map" class="contact-map"></div>
     </section>
-
     <!-- #footer -->
     <footer id="footer" class="bg-dark text-center py-1">
       <p>Kõik õigused on kaitstud &copy;2024</p>
     </footer>
+    <!-- fas -->
+    <script
+      src="https://kit.fontawesome.com/1601de0f26.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       async
       src="https://maps.googleapis.com/maps/api/js?
      key:AIzaSyAt8znOXsZNdUMIwe8KcEjLRAc_wOb4zhg&callback=initMap"
     ></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 58.349451, lng: 26.714695 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
   </body>
 </html>
